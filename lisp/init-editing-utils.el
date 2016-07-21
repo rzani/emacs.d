@@ -134,6 +134,6 @@
 ;; Move text/region around the buffer
 ;;----------------------------------------------------------------------------
 (require-package 'drag-stuff)
-(drag-stuff-mode t)
+(drag-stuff-global-mode 1)
 
 (provide 'init-editing-utils)
