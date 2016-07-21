@@ -48,6 +48,7 @@
 (require-package 'diminish)
 (require-package 'scratch)
 (require-package 'emmet-mode)
+(require-package 'rainbow-delimiters)
 
 (require 'init-themes)
 (require 'init-osx-keys)
@@ -80,6 +81,8 @@
 (require 'init-markdown)
 (require 'init-php)
 (require 'init-html)
+(require 'init-javascript)
+(require 'init-css)
 
 (require 'init-editorconfig)
 
