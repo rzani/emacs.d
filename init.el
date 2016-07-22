@@ -83,6 +83,7 @@
 (require 'init-html)
 (require 'init-javascript)
 (require 'init-css)
+(require 'init-multi-web-mode)
 
 (require 'init-editorconfig)
 
