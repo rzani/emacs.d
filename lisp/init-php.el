@@ -10,7 +10,7 @@
   (linum-mode)
   (turn-on-auto-fill)
   (electric-indent-mode)
-  (electric-pair-mode)
+  (electric-pair-mode 1)
   (electric-layout-mode)
 
   (setq indent-tabs-mode nil

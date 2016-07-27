@@ -1,8 +1,5 @@
 (require-package 'unfill)
 
-(require-package 'smartparens)
-(require 'smartparens-config)
-
 (set-face-background 'show-paren-match (face-attribute 'default :foreground))
 (set-face-foreground 'show-paren-match (face-attribute 'default :background))
 (set-face-attribute 'show-paren-match nil :weight 'extra-bold)

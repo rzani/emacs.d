@@ -1,9 +1,15 @@
-;;----------------------------------------------------------------------------
-;; Multiple major modes
-;;----------------------------------------------------------------------------
 (require-package 'mmm-mode)
+
 (require 'mmm-auto)
-(setq mmm-global-mode 'buffers-with-submode-classes)
-(setq mmm-submode-decoration-level 2)
+(setq mmm-global-mode 'maybe)
+
+(mmm-add-classes
+ '((markdown-php
+    :submode php-mode
+    :face mmm-declaration-submode-face
+    :front "^```php[\n\r]+"
+    :back "^```$")))
+
+(mmm-add-mode-ext-class 'markdown-mode nil 'markdown-php)
 
 (provide 'init-mmm)

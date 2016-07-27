@@ -49,6 +49,7 @@
 (require-package 'scratch)
 (require-package 'emmet-mode)
 (require-package 'rainbow-delimiters)
+(require-package 'smartparens)
 
 (require 'init-themes)
 (require 'init-osx-keys)
@@ -79,11 +80,13 @@
 (require 'init-multiterm)
 
 (require 'init-markdown)
+(require 'init-yml)
+(require 'init-nginx)
 (require 'init-php)
-(require 'init-html)
+;; (require 'init-html)
 (require 'init-javascript)
 (require 'init-css)
-(require 'init-multi-web-mode)
+(require 'init-web)
 
 (require 'init-editorconfig)
 
