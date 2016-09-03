@@ -1,9 +1,8 @@
-(require-package 'helm-gtags)
-
-(setq helm-gtags-fuzzy-match t)
-
 (when (and (maybe-require-package 'gtags)
            (maybe-require-package 'bpr))
+
+  (setq helm-gtags-fuzzy-match t)
+
   ;; Bind some useful keys in the gtags select buffer that evil overrides.
   (add-hook 'gtags-select-mode-hook
             (lambda ()

@@ -61,6 +61,8 @@
     )
   )
 
+(global-set-key (kbd "C-, C-.") 'switch-to-previous-buffer)
+
 ;;------------------------------------------------------------------------------
 ;; Config EVIL
 ;;------------------------------------------------------------------------------
@@ -118,15 +120,15 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (global-evil-surround-mode)
 
 ;;------------------------------------------------------------------------------
-;; Define S-SPC as <escape>
+;; Define C-g as <escape>
 ;;------------------------------------------------------------------------------
 (defun evil-esc (prompt)
   (cond
    ((or (evil-insert-state-p) (evil-normal-state-p) (evil-replace-state-p) (evil-visual-state-p)) [escape])
    (t (kbd "C-g"))))
 
-(define-key key-translation-map (kbd "S-SPC") 'evil-esc)
-(define-key evil-operator-state-map (kbd "S-SPC") 'keyboard-quit)
-(set-quit-char "S-SPC")
+(define-key key-translation-map (kbd "C-g") 'evil-esc)
+(define-key evil-operator-state-map (kbd "C-g") 'keyboard-quit)
+(set-quit-char "C-g")
 
 (provide 'init-evil)

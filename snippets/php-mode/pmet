@@ -2,9 +2,7 @@
 # name: pmet
 # key: pmet
 # --
-
 public function $1()
 {
     $0
 }
-
