@@ -25,7 +25,7 @@
   (setq evil-leader/in-all-states 1)
   (require-package 'avy)
   (evil-leader/set-key
-    "."   'switch-to-previous-buffer
+    "."   'mode-line-other-buffer
     ","   'avy-goto-char-2
     "SPC" 'avy-goto-word-1
     "_"   'split-window-vertically-instead
@@ -45,8 +45,8 @@
     "q"   'kill-this-buffer
     "r"   'helm-recentf
     "s"   'ag-project
-    "t"   'gtags-reindex
-    "T"   'helm-gtags-find-tag
+    "T"   'gtags-reindex
+    "t"   'helm-gtags-find-tag
     "v"   'split-window-right
     "w"   'save-buffer
     "y"   'copy-to-register
@@ -61,7 +61,7 @@
     )
   )
 
-(global-set-key (kbd "C-, C-.") 'switch-to-previous-buffer)
+(global-set-key (kbd "C-, C-.") 'mode-line-other-buffer)
 
 ;;------------------------------------------------------------------------------
 ;; Config EVIL

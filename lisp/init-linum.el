@@ -12,4 +12,6 @@
 
 (global-set-key (kbd "<f7>") 'linum-mode)
 
+(linum-mode)
+
 (provide 'init-linum)

@@ -60,8 +60,9 @@
 (require 'init-windows)
 (require 'init-flycheck)
 
-;; @todo - make it work
-;; (require 'init-gtags)
+(require 'init-projectile)
+(require 'init-evil)
+(require 'init-multiterm)
 
 (require 'init-sessions)
 (require 'init-font)
@@ -75,10 +76,6 @@
 ;; @todo - add some features
 (require 'init-dired)
 
-(require 'init-projectile)
-(require 'init-evil)
-(require 'init-multiterm)
-
 (require 'init-markdown)
 (require 'init-yml)
 (require 'init-nginx)
@@ -89,6 +86,9 @@
 (require 'init-web)
 
 (require 'init-editorconfig)
+
+;; @todo - make it work
+(require 'init-gtags)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))

@@ -2,6 +2,8 @@
 
 (global-set-key [f8] 'neotree-toggle)
 
+(setq projectile-switch-project-action 'neotree-projectile-action)
+
 (add-hook 'neotree-mode-hook
 	  (lambda ()
 	    (define-key evil-normal-state-local-map (kbd "m") 'neotree-create-node)

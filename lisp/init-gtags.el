@@ -1,6 +1,7 @@
-(when (and (maybe-require-package 'gtags)
+(when (and (maybe-require-package 'ggtags)
            (maybe-require-package 'bpr))
 
+  (setq bpr-colorize-output t)
   (setq helm-gtags-fuzzy-match t)
 
   ;; Bind some useful keys in the gtags select buffer that evil overrides.
